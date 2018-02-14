@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="14sp"
+    android:layout_marginHorizontal="10sp"
+    android:backgroundTint="@color/yellow1"
+    app:cardElevation="3sp"
+    android:layout_width="match_parent"
+    android:layout_height="130sp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8sp"
+        android:paddingBottom="4dp">
+
+
+        <TextView
+            android:id="@+id/nombre_textr"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/nombre_rutina_lista"
+            android:layout_alignStart="@+id/tipo_rutina_lista"
+            android:layout_marginTop="8sp"
+            android:text="@string/nombre"
+            android:textColor="@color/brown1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nombre_rutina_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6sp"
+            android:layout_toEndOf="@+id/nombre_textr"
+            android:text="@string/rutina"
+            android:textColor="@color/brown1"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/tipo_rutina_lista"
+            android:background="@color/brown1" />
+
+        <TextView
+            android:id="@+id/tipo_rutina_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nombre_textr"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="23dp"
+            android:text="@string/tipo"
+            android:textColor="@color/brown1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/nivel_rutina_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tipo_rutina_lista"
+            android:layout_marginLeft="7sp"
+            android:text="@string/nivel"
+            android:textColor="@color/brown1"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
