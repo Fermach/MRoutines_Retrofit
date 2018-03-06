@@ -32,7 +32,6 @@ public class RutinasAPI implements RutinasDataSource{
 
     }
 
-
     /**
      * @param callback
      */
